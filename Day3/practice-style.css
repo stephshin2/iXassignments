@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.box {
+	float: left;
+	width: 25%;
+	height: 400px;
+}
+
+
+.one {
+	border: 4px solid pink;
+
+}
+
+.two {
+	border: 4px solid green;
+
+}
+
+.three {
+	border: 4px solid yellow;
+	
+}
+
+.four {
+	border: 4px solid blue;
+
+}
+
+@media(max-width: 768px) {
+	.box {
+		width: 50%;
+	}
+}
+
+@media(max-width: 480px) {
+	.box {
+		width: 100%;
+	}
+}
