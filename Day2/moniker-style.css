@@ -1,0 +1,106 @@
+
+
+* {
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.container {
+	margin: 0px auto; 
+	width: 1250px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+nav {
+	display: inline-block;
+}
+
+
+
+.left-nav {
+	display: inline-block;
+	float: left;
+	font-size: 24px;
+	padding: 0px;
+}
+
+.right-nav {
+	display: inline-block;
+	float: right;
+	font-size: 18px;
+	padding: 0px 30px 0px 30px;
+}
+
+.text-info {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.mantra {
+	float: left;
+	width: 66.666666%
+	font-size: 24px;
+	padding-right: 475px;
+}
+
+.contact-info {
+	float: left;
+	width: 16.66666667%
+	font-size: 15px;
+	padding-right: 20px;
+}
+
+.social-media {
+	float: left;
+	width: 16.66666667%
+	font-size: 15px;
+}
+
+.one-third-odd {
+	float: left;
+	width: 30.3333333%;
+}
+
+.two-thirds-odd {
+	float: left;
+	width: 64.6666666%;
+}
+
+.one-third-even {
+	width: 30.3333333%;
+	float: right;
+}
+
+.two-thirds-even {
+	width: 60.6666666%;
+	float: right;
+}
+
+.even-images {
+	display: inline-block;
+}
+
+img {
+	padding: 10px;
+}
+
+

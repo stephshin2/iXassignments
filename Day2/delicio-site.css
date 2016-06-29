@@ -1,0 +1,104 @@
+
+
+ul li {
+	display: inline-block;
+
+}
+
+.title {
+	font-family: century; 
+	font-size: 40px;
+	float: left;
+}
+
+.rightalign {
+	float: right;
+	padding: .8em;
+	font-size: 16px;
+	font-family: helvetica; 
+}
+
+img {
+	height: 20px;
+	width: 20px;
+}
+
+nav {
+	background-color: #fff;
+	padding-top: 5px;
+	padding-left: 0px;
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
+#navhome {
+	font-color: ffa81e; 
+}
+
+div {
+	background-image: url("http://i1.wp.com/demo.wpzoom.com/delicio-simple/files/2016/04/photo-1421622548261-c45bfe178854.jpg?zoom=2&resize=711%2C475");
+	background-size: cover; 
+	height:400px;
+	text-align: center;
+	position: center;
+	color: white;
+	padding-top: 80px;
+}
+
+div h1 {
+	font-family: Century; 
+	font-size: 60px;
+}
+
+hr {
+	width: 100px;
+	padding: 0px;
+}
+
+div p {
+	font-family: helvetica;
+	font-size: 18px;
+	padding: 20px;
+}
+
+.button {
+	background-color: orange; 
+	width: 200px;
+	height:30px;
+	margin: auto;
+	padding: 15px;
+}
+
+.info {
+	color: #D3D3D3;
+}
+
+span {
+	color: orange;
+}
+
+
+.stuff {
+	margin: 0px auto;
+	width: 100%;
+	text-align: left;
+	background-color: bla
+}
+
+.stuff li {
+	width: 25%;
+	float: left;
+}
+
+.bottomstuff {
+	display: inline-block;
+}
+
+.bottomleft {
+	float: left;
+}
+
+.bottomright {
+	float: right; 
+}
