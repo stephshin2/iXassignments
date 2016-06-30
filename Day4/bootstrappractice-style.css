@@ -1,0 +1,9 @@
+.box {
+	border: 1px solid red;
+}
+
+@media(max-width: 768px) {
+	.box {
+		border: 1px solid green;
+	}
+}

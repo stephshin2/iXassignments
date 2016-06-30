@@ -1,0 +1,85 @@
+
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.mission-title {
+	font-size: 60px;
+	padding-top: 140px;
+}
+
+.mission-text {
+	font-size: 30px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+
+.mission {
+	color: white;
+	margin: 0px auto;
+	width: 100%;
+	background-image: url(http://cdn0.ixperience.co.za/assets/img-src-c8bf53db2c44e1fba73250b01e4ab3a5e85dffe2c22fdfb53da83a8d979d7823.jpg);
+}
+
+.founding-team {
+	background-color: #FAFAFB;
+}
+
+.team-title {
+	font-size: 48px;
+	text-align: left;
+}
+
+.team-text {
+	font-size: 18px;
+}
+
+
+
+
+
+.team-main-title {
+	font-size: 48px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.team img {
+	border-radius: 50%;
+}
+
+.team p {
+	text-align: center;
+}
+
+.team {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: white;
+}
+
+.statistics-title {
+	font-size: 48px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+
+
+.video {
+	background-color: white;
+	padding-top: 50px;
+	font-size: 48px;
+	text-align: center;
+}
+
+
+
+
+.contact {
+	background-color: white;
+}
