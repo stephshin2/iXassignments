@@ -1,0 +1,302 @@
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.big-container {
+	margin: 0px auto;
+	max-width: 1300px;
+}
+
+.home-page {
+	background: url(https://scontent.xx.fbcdn.net/t31.0-8/13517418_10208950262731356_7323430064802908105_o.jpg) no-repeat center center fixed;
+	background-size: cover;
+	padding-left: 15px;
+}
+
+h1 {
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+
+.title-text {
+	padding-bottom: 600px;
+	color: white;
+	font-family: comfortaa;
+}
+
+.nav-bar {
+	font-family: comfortaa;
+	background-color: rgba(6, 38, 106, .9);
+	background-size: cover;
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+.about-me-img {
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
+
+.about-me-text {
+	font-family: comfortaa;
+}
+
+.about-me-text-intro {
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+.about-me-text-more {
+	font-size: 18px;
+	padding-top: 30px;
+}
+
+.about-me {
+	padding-top: 150px;
+	padding-bottom: 130px;
+	margin: 0px auto;
+}
+
+
+.resume {
+	background-color: rgba(64, 129, 214, .3);
+	padding-bottom: 50px;
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.page-intro {
+	font-family: comfortaa;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.resume-text {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: left;
+	
+}
+
+.resume-text p {
+	font-family: comfortaa;
+	padding-left: 80px;
+}
+
+.resume-title {
+	font-size: 24px;
+	color: white;
+}
+
+.resume-time {
+	font-size: 20px;
+	color: #06266a;
+}
+
+.resume-location {
+	font-size: 18px;
+	margin-top: -13px;
+	color: #06266a;
+}
+
+.resume-info {
+	font-size: 16px;
+}
+
+.resume-pic img {
+	/*height: 230px;
+	width: 250px;*/
+	width: 65%;
+	margin: 0px auto;
+	border-radius: 50%;
+	border: 5px solid white;
+}
+
+.resume-pic {
+	margin: 0px auto;
+	padding-top: 50px;
+}
+
+.passions {
+	text-align: center;
+}
+
+.passions-box-1, .passions-box-2, .passions-box-3 {
+	border: 5px solid white;
+	border-radius: 5%;
+	padding: 120px 20px 120px 20px;
+	background-color: #06266a;
+}
+
+.passions-box-1:hover {
+	background: url(https://scontent.xx.fbcdn.net/t31.0-8/13584802_10208951434640653_1658045229122671626_o.jpg);
+	background-size: cover;
+	color: white;
+}
+
+.passions-box-2:hover {
+	background: url(passion-2-pic.jpg);
+	background-size: cover;
+	color: white;
+}
+
+.passions-box-3:hover {
+	background: url(https://scontent.xx.fbcdn.net/t31.0-8/13582133_10208951457481224_978770681661165200_o.jpg);
+	background-size: cover;
+	color: white;
+}
+
+.boxes {
+	padding: 30px;
+}
+
+.boxes-row-1 {
+	margin-top: -80px;
+	margin-bottom: -20px;
+}
+
+.boxes-row-2 {
+	margin-bottom: 70px;
+}
+
+a {
+	font-family: comfortaa;
+	font-weight: 900;
+	font-size: 40px;
+}
+
+a:link {
+	color: white;
+}
+
+.boxes a:visited {
+	color: white;
+}
+
+.blog {
+	background-color: rgba(64, 129, 214, .3);
+	text-align: center;
+	padding-bottom: 150px;
+}
+
+.blog-boxes {
+	border: 5px solid white;
+	height: 275px;
+	width: 275px;
+	border-radius: 5%;
+}
+
+.blog-row {
+	padding-top: -20px;
+}
+
+.blog-info {
+	border: 5px solid white;
+	border-radius: 5%;
+	margin: 0px auto;
+	width: 275px;
+	font-style: 24px;
+}
+
+.blog-title {
+	font-size: 30px;
+}
+
+.blog-preview {
+	font-size: 14px;
+}
+
+.contact-icons {
+	border-radius: 5%;
+}
+
+.fb-icon {
+	height: 100px;
+	width: 100px;
+}
+
+.insta-icon {
+	height: 200px;
+	width: 200px;
+}
+
+.mail-icon {
+	height: 120px;
+	width: 120px;
+}
+
+.mail-img {
+	padding-left: 80px;
+	margin-top: -10px;
+}
+
+.contacts {
+	text-align: center;
+}
+
+
+
+@media(max-width: 992px) {
+	.about-me-img {
+		height: 250px;
+		width: 250px;
+	}
+
+	.about-me-text-intro {
+		font-size: 24px;
+		padding-top: 10px;
+	}
+
+	.about-me-text-more {
+		font-size: 16px;
+		margin-top: -10px;
+	}
+
+	.about-me {
+		padding-top: 120px;
+		padding-bottom: 100px;
+	}
+
+	.page-intro {
+		font-size: 36px;
+	}
+}
+
+@media(max-width: 768px) {
+	.about-me-img {
+		height: 200px;
+		width: 200px;
+	}
+
+	.about-me-text-intro {
+		font-size: 22px;
+	}
+
+	.about-me {
+		text-align: center;
+	}
+
+	.page-intro {
+		font-size: 28px;
+	}
+}
+

@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+
+.navbar-brand {
+	font-family: 
+}
+
 .mission-title {
 	font-size: 60px;
 	padding-top: 140px;
@@ -20,7 +25,8 @@
 	color: white;
 	margin: 0px auto;
 	width: 100%;
-	background-image: url(http://cdn0.ixperience.co.za/assets/img-src-c8bf53db2c44e1fba73250b01e4ab3a5e85dffe2c22fdfb53da83a8d979d7823.jpg);
+	background: url(https://dumsld4by7gdn.cloudfront.net/assets/backgrounds/about-main-4592d05f63d029bc507a249853a99997f10a27bcf2162fe0a78ec1ed2f233d28.jpg) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .founding-team {
@@ -34,20 +40,33 @@
 
 .team-text {
 	font-size: 18px;
+	padding-top: 50px;
 }
 
 
+.founding-team {
+	padding: 40px;
+}
 
-
+.team-pic {
+	border-radius: 50%;
+}
 
 .team-main-title {
 	font-size: 48px;
 	font-weight: lighter;
 	text-align: center;
+	padding-bottom: 30px;
 }
 
 .team img {
 	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+}
+
+.team > div {
+	padding: 70px;
 }
 
 .team p {
@@ -55,9 +74,10 @@
 }
 
 .team {
-	padding-top: 100px;
+	padding-top: 80px;
 	padding-bottom: 100px;
 	background-color: white;
+	text-align: center;
 }
 
 .statistics-title {
