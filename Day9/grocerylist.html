@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body ng-app="groceryListApp">
+  <h1>Stephanie's Grocery List</h1>
+    <div ng-controller="groceryListCtrl">
+      <h4>Grocery Item:
+      <input ng-model="item"> {{item}} </h4>
+      <h4>Quantity:
+      <input ng-model="quantity"> {{quantity}} </h4>
+      <button ng-click="addItem()">Add Item</button>
+      
+      <label> Search: <input ng-model = "search"> </label>
+
+      <button ng-click="cart()"> Empty Cart </button>
+
+      <ol>
+        
+        <li ng-repeat="item in listItem | filter:search">
+
+          <div ng-hide= "item.isEditing">
+            <span ng-dblclick= "item.isEditing = true"> {{item.name}} - {{ item.quantity }} </span>
+            <button ng-click="add(item)"> + </button>
+            <button ng-click="subtract(item)"> - </button>
+            <button ng-click= "item.isEditing = true"> Edit </button>
+            <button ng-click= "remove($index)"> Delete </button>
+          </div>
+
+          <div ng-show= "item.isEditing">
+            <input ng-model= "item.name">
+              <button ng-click="item.isEditing=false">Done</button>
+          </div>
+        </li>
+
+      </ol>
+      
+    </div>
+    
+    <script src="angular.js"></script>
+    <script src="grocerylist.js"></script>
+  </body>
+</html>
