@@ -1,0 +1,22 @@
+
+
+
+<h3>{{movie.Title}}</h3>
+
+	<p> Director: {{movie.Director}} </p>
+	<p> Actors: {{movie.Actors}} </p>
+	<p> Plot: {{movie.Plot}} </p>
+	<p> Release Date: {{movie.Released}} </p>
+	<p> Writers: {{movie.Writer}} </p>
+	<p> IMDB Rating: {{movie.imdbRating}} </p>
+
+
+
+<div>
+	
+	<div ng-repeat="g in giphs">
+		<img ng-src= "{{g.images.downsized.url}}">
+	</div>
+	
+
+</div>

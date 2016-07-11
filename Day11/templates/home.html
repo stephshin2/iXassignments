@@ -1,0 +1,13 @@
+
+<div ng-controller="MainCtrl">
+
+
+	<input ng-model="searchBar">
+	<button class="button"ng-click="searchMovie(searchBar)">Search</button>
+	<div ng-repeat="m in movieArray track by $index">
+ 
+		<h6> <a href="#/movie/{{m.imdbID}}"> {{m.Title}}  </a> </h6>
+
+	</div>
+
+</div>
