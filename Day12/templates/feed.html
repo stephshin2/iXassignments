@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="header">
+			<h1 class="col-xs-10">Chommies!</h1>
+			<button class="button"> My Chommie Profile :) </button>
+		</div>
+	</div>
+	
+
+
+	<div class="row">	
+		<div class="col-xs-6">
+			<div ng-repeat="p in props">
+				<h3>{{p.receiver.first_name}} {{p.receiver.last_name}}</h3>
+				<p>Message: {{p.text}}</p>
+			</div>
+		</div>
+	</div>
+
+	<select ng-model="selectedBru" ng-options="b.id as b.first_name for b in brus"></select>
+
+	<input ng-model="newPropsValue">
+
+	<button ng-click="sendProps()"> Send Props </button>
+
+<!-- 	<div class="row">	
+		<div class="col-xs-6">
+			<div ng-repeat="b in brus">
+				<h3>{{b.first_name}} {{b.last_name}}</h3>
+			</div>
+		</div>
+	</div>
+ -->
+
+</div>
+
