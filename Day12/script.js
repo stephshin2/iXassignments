@@ -5,6 +5,10 @@ app.config(function($routeProvider) {
 		controller: 'FeedCtrl',
 		templateUrl: 'templates/feed.html',
 	})
+	$routeProvider.when('/me/:brusId', {
+		controller: 'MeCtrl',
+		templateUrl: 'templates/me.html',
+	})
 
 });
 
@@ -31,15 +35,56 @@ app.controller('FeedCtrl', function($scope, $http) {
 	  }).then(function(response) {
 	  	console.log(response);
 	  	$scope.brus = response.data;
+	 
 	  })
 
-	  $scope.sendProps = function() {
+	  $scope.sendProps = function(x, y) {
 	  	console.log($scope.newPropsValue);
 	  	console.log($scope.selectedBru);
-	  }
+	  	$scope.errorMessage = "";
 
+	  	$http({
+	    method: "POST",
+	    url: "http://ixchommies.herokuapp.com/props",
+	    params: {
+       		token: "be9378d11b18ca40c4823c7cb7fb9813",
+	    },
+	    data: {
+	    	for: x,
+       		props: y,
+	    }
+	  }).then(function(response) {
+	  	console.log(response);
+	  	$scope.sentProp= response.data;
+	  	$scope.props.unshift($scope.sentProp);
+	  	$scope.selectedBru = "";
+	  	$scope.newPropsValue = "";
+
+
+	  }).catch(function(response) {
+	  	$scope.errorMessage = response.data.message;
+	  	$scope.newPropsValue = "";
+	  });
+
+
+	}
 });
 
+
+app.controller('MeCtrl', function($scope, $http) {
+	$http({
+	    method: "GET",
+	    url: "http://ixchommies.herokuapp.com/props/me",
+	    params: {
+    		token: "be9378d11b18ca40c4823c7cb7fb9813",
+	    }
+	  }).then(function(response) {
+	  	console.log(response);
+	  	$scope.myProp = response.data;
+	  	console.log($scope.myProp);
+	  })
+
+	  });
 
 
 

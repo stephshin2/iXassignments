@@ -1,0 +1,22 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="header">
+			<div class="title">
+				<h1 class="col-xs-10">My Chommie Profile</h1>
+			</div>
+				<button class="button" ng-click="homePage"><a href="#/"> Back to My Chommies! </a> </button>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="row">	
+		<div class="col-xs-6">
+			<ul class="props">
+				<li ng-repeat= "m in myProp"> 
+					<ul class="my_props">{{ m.text }}</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
