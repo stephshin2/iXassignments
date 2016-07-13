@@ -13,6 +13,7 @@ app.config(function($routeProvider) {
 });
 
 app.controller('FeedCtrl', function($scope, $http) {
+	$scope.isSending = false; 
 
 	console.log($scope.item);
 	$http({
@@ -42,6 +43,7 @@ app.controller('FeedCtrl', function($scope, $http) {
 	  	console.log($scope.newPropsValue);
 	  	console.log($scope.selectedBru);
 	  	$scope.errorMessage = "";
+	  	$scope.isSending = true;
 
 	  	$http({
 	    method: "POST",
@@ -64,7 +66,13 @@ app.controller('FeedCtrl', function($scope, $http) {
 	  }).catch(function(response) {
 	  	$scope.errorMessage = response.data.message;
 	  	$scope.newPropsValue = "";
+
+	  }).finally(function(response) {
+	  	$scope.isSending = false;
+
 	  });
+	
+
 
 
 	}

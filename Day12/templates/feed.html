@@ -12,13 +12,15 @@
 	
 	<div ng-show="errorMessage" class="alert alert-danger"> {{errorMessage}} </div>
 
-
+	<div ng-class="{'isDisabled': isSending}">
+	
 		<select ng-model="selectedBru" ng-options="b.id as b.first_name for b in brus" class="menu"></select>
 
 		<input ng-model="newPropsValue">
 
 		<button ng-click="sendProps(selectedBru, newPropsValue)"> Send Props </button>
 
+	</div>
 
 	<div class="row">	
 		<div class="col-xs-6">
