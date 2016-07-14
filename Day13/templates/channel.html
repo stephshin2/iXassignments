@@ -1,0 +1,29 @@
+<div class="channeltitle">
+	<h1>
+		Welcome to {{channels.name}} ... 
+	</h1>
+	<h4>
+		Enter your text here and get started! 
+	</h4>
+</div>
+
+<div ng-click="back">
+	<a href="#/">Back Home</a>
+</div>
+
+<form>
+	Name: <br>
+		<input type="text" ng-model="userName">
+		<br>
+	Message: <br>
+		<input type="text" ng-model="newMessage">
+	<br>
+		<button type="submit" ng-click="sendMessage()"> Submit! </button>
+</form>
+
+
+<ul>
+	<li ng-repeat="message in messages">
+		{{message.sender}} - {{message.text}}
+	</li>
+</ul>

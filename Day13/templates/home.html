@@ -1,0 +1,26 @@
+<div class="container-fluid">
+	<div class="nav">
+		<h1 class="maintitle">
+			TENSION
+		</h1>
+	</div>
+</div>
+
+<div class="info">
+	<p>
+		Welcome to Tension, your favorite app for all things tense, relaxed and everything inbetween! 
+	</p>
+	<p>
+		Choose a channel to get started: 
+	</p>
+</div>
+
+
+	
+<ul>
+	<li ng-repeat="channel in channels">
+		<a href="#/channel/{{channel.channelId}}">
+		{{channel.name}} - {{channel.description}}
+		</a>
+	</li>
+</ul>
