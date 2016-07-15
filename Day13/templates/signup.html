@@ -1,0 +1,42 @@
+<div class="stuff">
+<div class="container-fluid">
+
+
+  <div class="row">
+     <h2 class="nav">Sign up</h2>
+  </div>
+
+  <form ng-submit="signUp()">
+
+  <div ng-show="errorMessage" class="alert alert-danger">   {{errorMessage}} 
+  </div>
+
+  <div ng-show="successMessage" class="alert alert-success">
+    {{successMessage}}
+  </div>
+
+    <div>
+      <label class="first">Name</label>
+      <input ng-model="name">
+    </div>
+    
+    <div>
+      <label>Email</label>
+      <input ng-model="email">
+    </div>
+    
+    <div>
+      <label>Password</label>
+      <input ng-model="password" type="password">
+    </div>
+    
+    <button type="submit" class="btn">Sign up</button>
+
+    <div ng-click="goback">
+      <a href="#/">Back home</a>
+    </div>
+    
+  </form>
+
+</div>
+</div>

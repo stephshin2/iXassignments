@@ -1,6 +1,6 @@
 <div class="channeltitle">
 	<h1>
-		Welcome to {{channels.name}} ... 
+		Welcome to the {{currchannel}} channel... 
 	</h1>
 	<h4>
 		Enter your text here and get started! 
@@ -24,6 +24,6 @@
 
 <ul>
 	<li ng-repeat="message in messages">
-		{{message.sender}} - {{message.text}}
+		{{message.sender}}: {{message.text}}
 	</li>
 </ul>

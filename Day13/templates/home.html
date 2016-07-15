@@ -1,26 +1,44 @@
 <div class="container-fluid">
-	<div class="nav">
-		<h1 class="maintitle">
-			TENSION
-		</h1>
+	<div class="row">
+		<div class="nav">
+			<h1 class="maintitle">
+				TENSION
+			</h1>
+		</div>
 	</div>
-</div>
 
-<div class="info">
-	<p>
-		Welcome to Tension, your favorite app for all things tense, relaxed and everything inbetween! 
-	</p>
-	<p>
+	<div class="info">
+		<p>
+			Welcome to Tension, your favorite app for all things tense, relaxed and everything inbetween! 
+		</p>
+	</div>
+
+	<div class="user">
+		<div ng-click="signupPage">
+			<a href="#/signup/">Signup!</a>
+		</div>
+
+		<div ng-click="loginPage">
+			<a href="#/login/">Already signed up? Login!</a>
+		</div>
+
+		<!-- <span ng-show="firebaseUser">
+		  {{ firebaseUser.displayName }} |  -->
+		  <a href="#/login" ng-click="authObj.$signOut()">Sign out</a>
+		<!-- </span> -->
+
+	</div>
+
+	<p class="choose">
 		Choose a channel to get started: 
 	</p>
+
+	<ul>
+		<li ng-repeat="c in channels">
+			<a href="#/channel/{{c.name}}">
+			{{c.name}}: {{c.description}}
+			</a>
+		</li>
+	</ul>
+
 </div>
-
-
-	
-<ul>
-	<li ng-repeat="channel in channels">
-		<a href="#/channel/{{channel.channelId}}">
-		{{channel.name}} - {{channel.description}}
-		</a>
-	</li>
-</ul>
